@@ -1,0 +1,50 @@
+# basics
+java basics programs .
+ublic class SBIcoreBank
+{
+//static variable
+static int debitTxCounter=10;
+static int creditTxCounter=10;
+//instant variable
+int accountNumber;
+String customerName;
+double accountBalance;
+//constructor
+SBIcoreBank(int accountNumber,String customerName,double accountBalance)
+{
+this.accountNumber = accountNumber;
+this.customerName = customerName;
+this.accountBalance = accountBalance;
+}
+
+double credit(double amount)
+{
+System.out.println(accountNumber+"  :  "+customerName);
+System.out.println("before credit  :"+accountBalance);
+accountBalance=accountBalance+amount;
+System.out.println("after credit  :"+accountBalance);
+creditTxCounter=creditTxCounter+10;
+return accountBalance;
+}
+double debit(double amount)
+{
+System.out.println("before debit  :"+accountBalance);
+accountBalance=accountBalance-amount;
+System.out.println("after debit  :"+accountBalance);
+debitTxCounter=debitTxCounter+10;
+return accountBalance;
+}
+public static void main(String args[])
+{
+SBIcoreBank b1= new SBIcoreBank(123,"raj",25000.00);
+SBIcoreBank b2= new SBIcoreBank(345,"tej",15500.00);
+SBIcoreBank b3= new SBIcoreBank(456,"zara",47250.00);
+b1.debit(5000.00);
+b2.credit(500.00);
+b3.credit(1000.00);
+b1.credit(250.00);
+b2.debit(7000.00);
+System.out.println(debitTxCounter);
+System.out.println(creditTxCounter);
+}
+}
