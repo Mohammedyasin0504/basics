@@ -1,0 +1,28 @@
+# basics
+java basics programs .
+public class Switch 
+{
+public static void main (String args[])
+{
+char attendance = 'O';
+switch (attendance)
+{
+case 'O':
+System.out.println("on-Duty");
+break;
+case 'P':
+System.out.println("attended-classed");
+break;
+case 'A':
+System.out.println("Not attended- classes");
+break;
+
+
+}
+
+
+
+}
+
+
+}
