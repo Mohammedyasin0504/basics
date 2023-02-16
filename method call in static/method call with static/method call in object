@@ -1,0 +1,19 @@
+# basics
+java basics programs .
+public class Objectcall
+{
+void m()
+{
+System.out.println("anto");
+}
+static void n()
+{
+System.out.println("vimal");
+}
+public static void main(String args[])
+{
+Objectcall a = new Objectcall();
+a.m();
+n();
+}
+}
