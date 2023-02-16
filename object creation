@@ -1,0 +1,43 @@
+# basics
+java basics programs .
+public class Calculator
+{
+double add(double a, double b)
+{
+double c=a+b;
+System.out.println( "addition value is"  +c);
+return c; 
+}
+double sub(double a, double b)
+{
+double c=a-b;
+System.out.println("subration value is"  +c);
+return c; 
+}
+double mul(double a, double b)
+{
+double c=a*b;
+System.out.println( "multiplication value is"  +c);
+return c; 
+}
+double diviQ(double a, double b)
+{
+double c=a/b;
+System.out.println(" division value is"  +c);
+return c; 
+}
+double diviR(double a, double b)
+{
+double c=a%b;
+System.out.println( "modules value is" +c);
+return c; 
+}
+public static void main (String args[])
+{
+Calculator cal = new Calculator();
+cal.add(45.00,55.00);
+cal.sub(25.00,18.00);
+cal.mul(42.00,81.00);
+cal.diviQ(10.00,5.00);
+cal.diviR(20.00,10.00);
+}
