@@ -1,0 +1,42 @@
+# basics
+//parent class 
+java basics programs .
+public  class RBI
+{
+double credit(double balance,double amount)
+{
+balance = balance+amount;
+System.out.println(balance);
+return balance;
+}
+double debit(double balance,double amount)
+{
+balance=balance-amount;
+System.out.println(balance);
+return balance;
+}
+}
+//child class
+public class SBI extends RBI
+{
+void generatePassbook()
+{
+System.out.println("passbook got generated");
+}
+void printPassbook()
+{
+System.out.println("passbook got printed");
+}
+}
+//main class 
+public class SBI extends RBI
+{
+void generatePassbook()
+{
+System.out.println("passbook got generated");
+}
+void printPassbook()
+{
+System.out.println("passbook got printed");
+}
+}
