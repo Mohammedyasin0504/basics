@@ -1,0 +1,12 @@
+# basics
+java basics programs .
+find the average of four numbers [27,31,21,19]
+double  average(double a,double b,double c)
+{
+double avg=(a+b+c+d)/4.0;
+
+println(avg);
+return avg;
+
+
+}
