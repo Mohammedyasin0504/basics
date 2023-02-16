@@ -1,0 +1,31 @@
+# basics
+java basics programs .
+public class Parent
+{
+void m()
+{
+System.out.println("anto");
+}
+void n()
+{
+System.out.println("yasin");
+}
+}
+//child class
+public class Child extends Parent
+{
+void m()
+{
+System.out.println("yasin");
+}
+}
+//mainclass 
+public class Main
+{ 
+public static void main(String args[])
+{
+Child a = new Child();
+a.n();
+a.m();
+}
+}
